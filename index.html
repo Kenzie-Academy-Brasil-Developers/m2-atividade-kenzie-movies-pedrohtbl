@@ -4,10 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style/style.css" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
-    <!-- Escreva seu código aqui -->
+    <div class="generico">
+        <div>
+          <span>Ordenar:</span>
+        <select id="ordenar" name="select">
+          <option value="todos" selected>Todos</option>
+          <option value="score">por Notas</option>
+          <option value="goodReviews">por Boas Avaliações</option>
+          <option value="badReviews">por Avaliações Ruins</option>
+        </select>
+      </div>
+      <div class="filtro">
+        <span>Filtrar:</span>
+        <select id="filtrar">
+          <option value="genero">por Genero</option>
+          <option value="cor">por Cor</option>
+        </select>
+        <input>
+        <button>Pesquisar</button>
+      </div>
+    </div>
+
+    
     <script type="module" src="src/script.js"></script>
   </body>
 </html>

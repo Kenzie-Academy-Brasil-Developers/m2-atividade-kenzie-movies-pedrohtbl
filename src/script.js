@@ -1,10 +1,14 @@
 import kenzieMovies from "./utils/kenzieMovies.js";
+import { Interface } from "./models/Interface.js";
 
-/* Para conseguir buscar uma musica utilize esse método abaixo */
-// await kenzieMovies.buscaFilmes();
+const select = document.querySelector('#ordenar')
+const filtro = document.querySelector('#filtrar')
+const div      = document.querySelector('.filtro')
 
-/* Para conseguir acessar a musica que você buscou */
-// console.log(kenzieMovies.filmes);
+await kenzieMovies.buscaFilmes();
 
-// Comece seu código a partir desse comentário.
+Interface.montaInterface(kenzieMovies.filmes)
 
+select.addEventListener('change', Interface.select.bind(Interface))
+
+div.addEventListener('click', Interface.filtro)

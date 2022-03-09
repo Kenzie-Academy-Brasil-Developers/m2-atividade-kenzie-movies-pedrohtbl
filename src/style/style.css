@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+
+tr,table,th,td{
+    border: solid 1px rgb(200, 183, 202);
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table{
+    margin: 0 auto;
+}
+
+th{
+    background-color: blueviolet;
+    color: white;
+    font-size: 18px;
+    border: white solid 1px;
+}
+
+tr:nth-child(odd){
+    background-color: rgb(226, 215, 236);
+}
+td{
+    width: 100px;
+}
+p{
+    font-size: 24px;
+    width: 500px;
+    text-align: center;
+}
+select{
+    margin-bottom: 20px;
+}
+
+.filtro{
+    margin-left: 50px;
+}
+
+.generico{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
